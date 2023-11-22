@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12989671&assignment_repo_type=AssignmentRepo)
 # Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
@@ -31,3 +32,12 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+# Response
+Relatively simple little project, though the way you set up the graphs was not something I've seen before. I reused my search in graphs code and tweaked it to be compatible with your test code.
+## Runtime Analysis
+The asymptotic complexity of this implementation is the same as my Search in Graphs implementation, $\Theta\left(|V|+|E|\right)$. This is because my implementation will in the worst case iterate over each node and edge once.
+
+## References
+I referenced Cade Maynard's implementation to figure out how to use the way you set up the graphs. The important parts I took away were how to use Object.keys() and Object.values() to transform the input graph to something my search in graphs code could use.
+https://github.com/COSC3020/augmenting-path-CadeMaynard/blob/main/code.js
