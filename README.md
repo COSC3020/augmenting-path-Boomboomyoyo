@@ -32,3 +32,12 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+# Response
+Relatively simple little project, though the way you set up the graphs was not something I've seen before. I reused my search in graphs code and tweaked it to be compatible with your test code.
+## Runtime Analysis
+The asymptotic complexity of this implementation is the same as my Search in Graphs implementation, $\Theta\left(|V|+|E|\right)$. This is because my implementation will in the worst case iterate over each node and edge once.
+
+## References
+I referenced Cade Maynard's implementation to figure out how to use the way you set up the graphs. The important parts I took away were how to use Object.keys() and Object.values() to transform the input graph to something my search in graphs code could use.
+https://github.com/COSC3020/augmenting-path-CadeMaynard/blob/main/code.js
